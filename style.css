@@ -1,0 +1,5 @@
+#statBox {
+    border: 1px solid black;
+    display: none;
+    padding: 1rem;
+}
