@@ -1,8 +1,9 @@
 const addressEle = document.getElementById('safemoon_address');
 const speedEle = document.getElementById('speed');
+const speedElev1 = document.getElementById('speedv1');
 const totalEle = document.getElementById('total');
 const statEle = document.getElementById('statBox');
-const tokenAddress = '0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3'
+const tokenAddress = '0x42981d0bfbAf196529376EE702F2a9Eb9092fcB5'
 const bscToken = 'RE9CWGZITE33WWS7KT8H3B4MCVSPV1R5NF';
 const bscscan_url = 'https://bscscan.com/token/0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3?a=';
 
@@ -58,6 +59,7 @@ function updateResults(updateVal) {
     speed = accumulate['amount']/accumulate['seconds'];
     if(speed > 0) {
         speedEle.innerHTML = `${speed} SAFEMOON per Second!`;
+        speedElev1.innerHTML = `${speed*1000} SAFEMOON V1 per second. (comparison)`;
     }
     console.log(accumulate)
 }
